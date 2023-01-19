@@ -122,7 +122,8 @@ trait Attachments
         string $path,
         array $headers = [],
         string|null $filename = null
-    ): static {
+    ): static
+    {
         $attachment = $this->makeAttachment([
             'name' => $name,
             'headers' => $headers,
